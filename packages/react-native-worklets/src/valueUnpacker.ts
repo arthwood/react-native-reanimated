@@ -86,6 +86,7 @@ type ValueUnpacker = WorkletFunction<
   unknown
 >;
 
+// eslint-disable-next-line @ericcornelissen/top/no-top-level-side-effects
 if (__DEV__ && !shouldBeUseWeb()) {
   const testWorklet = (() => {
     'worklet';
